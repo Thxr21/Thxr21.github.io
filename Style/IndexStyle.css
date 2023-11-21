@@ -1,0 +1,817 @@
+/* #region PALETTE */
+    /* 
+    gray: #1a1a1c
+    gray2: #262629
+    gray3: #313135
+    pink: #c3083f
+    Turqouise: #30D5C8;
+     */
+/* #endregion */
+
+/* #region FONTS */
+
+@font-face {
+    font-family: Source;
+    src: url(Fonts/Source.ttf);
+}
+
+@font-face {
+    font-family: Mailand;
+    src: url(Fonts/Mailand.otf);
+}
+
+@font-face {
+    font-family: Glimp;
+    src: url(Fonts/Glimp.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(Fonts/Bebas.ttf);
+}
+
+
+/*#endregion*/
+
+body
+{
+    background-color: #262629;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/* #region LOADING PAGE */
+
+.Loading_Page
+{
+    position: fixed;
+    z-index: 3000;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1c;
+
+    transition: opacity 750ms, visibility 750ms;
+}
+.Loading_Page h1{
+    color: #c3083f;
+    font-family: bebas;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 20%;
+    user-select: none;
+
+}
+.Loading_Page h1 span{
+    color: white;
+
+}
+.Loading_Page_Hide
+{
+    opacity: 0;
+    visibility: hidden;    
+}
+
+/* #endregion */
+
+/* #region HEADER */
+
+header
+{   position: absolute;
+    background-color: #1a1a1c;
+    top: 0;
+    height: 12%;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.Title
+{
+    color: #30D5C8;
+    font-family: mailand;
+    font-size: 50px;
+
+    position: absolute;
+
+    height: 100%;
+    width: 13%;
+
+    top: 4px;
+    left: 40px;
+    bottom: 0px;
+
+    z-index: 1000;
+    user-select: none;
+
+    margin: 0;
+
+
+    transition-duration: 400ms;
+
+}
+.Title:hover
+{
+    font-size: 52px;
+
+    color: #c3083f;
+
+    text-shadow: #30D5C8 3px 3px;
+
+    transition-duration: 400ms;
+}
+/* #endregion */
+
+/* #region NAVIGATION */
+
+header nav
+{
+    position: absolute;
+
+    top: -13px;
+    bottom: 0;
+    right: 0%;
+    left: 13%;
+
+
+}
+header nav ul
+{
+    margin: 0;
+    padding: 0;
+
+    margin-left: -200px;
+
+
+
+    list-style: none;
+    text-align: center;
+}
+header nav ul li
+{
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a
+{
+    display: block;
+
+    padding: 20px 25px;
+
+    text-decoration: none;
+    color: #5c5c5c;
+    font-size: 30px;
+
+}
+header nav a
+{
+    font-family: bebas;
+    color: #5c5c5c;
+
+    transition-duration: 1500ms;
+
+}
+header nav a:hover
+{
+    color: white;
+    transition-duration: 300ms;
+}
+
+.Dropdown_List
+{
+    width: 180px;
+
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    margin-top: -10px;
+    margin-left: -34px;
+
+    position: absolute;
+    display: none;
+    z-index: 2;
+
+    background-color: #1a1a1c;
+    border-radius: 0% 0% 3% 3%;
+}
+.Dropdown_List li
+{
+    display: block;
+    margin: 2px 0px;
+    
+}
+li:hover .Dropdown_List
+{
+    display: block;
+    
+}
+
+/* #endregion */
+
+/* #region MAIN GRID */
+
+.Main_Grid_Container
+{
+    display: grid;
+    grid-template-areas: 
+    "Greeting"
+    "AboutMe";
+    
+}
+
+/* #endregion */
+
+/* #region GREETING */
+
+.Greeting_Grid_Container
+{
+
+    margin-top: 5%;
+    grid-area: Greeting;
+
+    display: grid;
+    grid-template-areas: "Text Image";
+    grid-template-columns: 50% 50%;
+
+
+}
+
+.Text_Grid
+{
+    margin-top: 20%;
+    grid-area: Text;
+    width: 100%;
+}
+
+.Text_Grid h2
+{
+    padding-left: 20px;
+    font: 30px glimp;
+    user-select: none;
+
+
+}
+
+.Text_Grid div
+{
+    width: 100%;
+    height: auto;
+
+    padding-left: 20px;
+    margin-top: 40px;
+    
+    
+}
+.Text_Grid .Welcome
+{
+    text-align: right;
+    font : 60px Bebas;
+    margin-top: -90px;
+    user-select: none;
+}
+.Text_Grid .Name     
+{
+
+    font : 100px Bebas;
+    margin-top: -52px;
+    user-select: none;
+
+
+}
+
+.Text_Grid .Name span
+{
+    color: #c3083f;
+
+    transition-duration: 400ms;
+
+}
+.Text_Grid .Name span:hover
+{
+    font-size: 110px;
+    color: #30D5C8;
+    text-shadow: #c3083f 8px 8px;
+
+    transition-duration: 400ms;
+}
+
+.Image_Grid img
+{
+    margin-top: -2%;
+    float: right;
+    width: 120%;
+}
+
+/* #endregion */
+
+/* #region ABOUT ME */
+
+.AboutMe_Grid_Container
+{
+    grid-area: AboutMe;
+
+    display: grid;
+    grid-template-areas: 
+    "Intro"
+    "Skills"
+    "Education";
+
+    background-color: #313135;
+    width: 98%;
+    height: auto;
+    margin-left: 1%;
+
+    border: solid transparent 4px;
+    border-radius: 30px;
+
+    transition-duration: 600ms;
+}
+
+#aboutMe_Title 
+{
+    font: 140px Bebas;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    position: relative;
+
+
+    transition-duration: 600ms;
+
+}
+
+.AboutMe_Grid_Container:hover
+{
+    border-color: #c3083f;
+    transition-duration: 600ms;
+}
+.AboutMe_Grid_Container:hover > #aboutMe_Title 
+{
+    text-shadow:#c3083f 8px 8px;
+    transition-duration: 600ms;
+
+}
+
+/* #endregion */
+
+/* #region INTRODUCTION */
+
+.Intro_Container{
+    margin-top: -9%;
+    margin-left: 2%;
+    width: 96%;
+}
+
+.Intro_Container h2{
+    font-size: 50px;
+    font-family: source;
+    text-transform: uppercase;
+    user-select: none;  
+    text-align: center;
+
+}
+
+#intro_Title
+{
+    width: 30%;
+    margin-left: 35%;
+    transition-duration: 500ms;
+
+}
+
+.Intro_Container img{
+    width: 22%;
+    background-color: #262629;
+    border-radius: 10px;
+    float: left;
+    margin-right: 16px;
+
+    transition-duration: 600ms;
+}
+
+.Intro_Content{
+    margin-top: -32px;
+    width: 100%;
+    height: 100%;
+}
+
+.Intro_Content p{
+    font-family: glimp;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.Intro_Container img:hover{
+    width: 23%;
+    box-shadow: inset #c3083f 15px 15px;
+    transition-duration: 600ms;
+}
+.Intro_Container:hover > #intro_Title
+{
+    font-size: 60px;
+    color: #c3083f;
+    transition-duration: 500ms;
+}
+
+
+/* #endregion */
+
+/* #region SKILLS */
+
+.Skill_Container{
+    margin-top: 100px;
+    margin-left: 2%;
+    width: 96%;
+}
+.skills_content{
+    width: 100%;
+    height: auto;
+    
+}
+.skills_content p{
+    font-family: glimp;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    margin-top: -32px;
+
+}
+#skill_Title{
+    font-size: 50px;
+    font-family: source;
+    text-transform: uppercase;
+    user-select: none;  
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    transition-duration: 500ms;
+}
+
+.Skill_Container:hover > #skill_Title
+{
+    font-size: 60px;
+    color: #c3083f;
+    transition-duration: 500ms;
+}
+
+.langs
+{   
+    width: 72%;
+    margin-left: 14%;
+    height: auto;
+    
+    display: grid;
+    grid-template-areas:
+        "py js c"
+        "php db html";
+}
+
+#py{
+    grid-area: py;
+}
+#js{
+    grid-area: js;
+}
+#c{
+    grid-area: c;
+}
+#php{
+    grid-area: php;
+}
+#db{
+    grid-area: db;
+}
+#htmlcss{
+    grid-area: html;
+}
+
+
+
+.lang_cont
+{   
+    margin-top: 5px;
+
+    
+    background-color: #262629;
+    
+    width: 340px;
+    height: 430px;
+    border-radius: 10px;
+    transition-duration: 600ms;
+    
+}
+.langs img
+{
+
+    margin-top: -15%;
+    width: 50%;
+    margin-left: 25%;
+    transition-duration: 1000ms;
+    transition-delay: 600ms;
+
+}
+.langs h3
+{
+    margin-top: 20%;
+
+    font-family: bebas;
+    font-size: 60px;
+    user-select: none;
+    text-align: center;
+}
+
+.lang_cont p
+{
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    user-select: none;
+    font-family: glimp;
+    filter: opacity(0);
+    margin-left: 5%;
+    margin-top: -54%;
+    width: 90%;
+
+    transition-duration: 600ms;
+}
+.lang_cont:hover
+{
+    color: #262629;
+    background-color: #c3083f;
+    transition: background-color 400ms, color 800ms 1000ms;
+}
+.lang_cont:hover > img
+{
+    filter: opacity(0);
+    transition-duration: 400ms;
+
+}
+.lang_cont:hover > p
+{
+    color: #262629;
+    filter: opacity(100);
+    transition-duration: 1400ms;
+    transition-delay: 1200ms;
+
+}
+
+/* #endregion */
+
+/* #region EDUCATION*/
+
+.Education_Container{
+    margin-top: 100px;
+    margin-left: 2%;
+    width: 96%;
+}
+.Education_Container h2{
+    font-size: 50px;
+    font-family: source;
+    text-transform: uppercase;
+    user-select: none;  
+    text-align: center;
+
+}
+.Education_Container p{
+    font-family: glimp;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    margin-top: -32px;
+
+}
+#eduTitle
+{
+    width: 30%;
+    margin-left: 35%;
+    transition-duration: 500ms;
+
+}
+.Education_Container:hover > #eduTitle
+{
+    font-size: 60px;
+    color: #c3083f;
+    transition-duration: 500ms;
+}
+
+.Education_Content{
+    margin-top: 0px;
+    margin-left: 15%;
+    width: 70%;
+    display: grid;
+    grid-template-areas: "bac uni";
+}
+.Education_Content h3
+{
+    background-color: #262629;
+    border-radius: 30px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-family: glimp;
+    text-transform: uppercase;
+    font-size: 40px;
+    transition-duration: 800ms;
+
+}
+.Education_Content h3:hover
+{
+    
+    background-color: #c3083f;
+    transition-duration: 400ms;
+
+}
+.Education_Content h3 a
+{
+    text-decoration: none;
+    color: white;
+    transition-duration: 600ms;
+    transition-delay: 300ms;
+}
+.Education_Content p
+{
+    margin-top: -50px;
+    text-align: center;
+    user-select: none;
+    filter: opacity(0);
+    
+    transition-duration: 400ms;
+}
+
+#bac{
+    grid-area: bac;
+    width: 460px;
+}
+#uni{
+    grid-area: uni;
+    width: 460px;
+}
+
+.Education_Content h3:target{
+    background-color: transparent;
+    border-radius: 0px;
+    transition: background-color 1200ms, border-radius 400ms;
+    transition-duration: 1200ms;
+}
+
+
+.Education_Content h3:target ~ p
+{
+    user-select: auto;
+    filter: opacity(100);
+    transition-delay: 1200ms;
+    transition-duration: 1600ms;
+}
+
+
+.education_title_bac::after
+{
+    content: '';
+    position: absolute;
+
+    width: 0px;
+    margin-left: -260px;
+    margin-top: 50px;
+    height: 4px;
+    background-color: #c3083f;
+
+    transition-duration: 600ms;
+}
+
+.education_title_bac:target > a
+{
+
+    color: #c3083f;
+    transition-duration: 600ms;
+    transition-delay: 750ms;
+
+
+
+}
+
+.education_title_bac:target::after
+{
+    width: 260px;
+    transition-duration: 600ms;
+    transition-delay: 750ms;
+}
+
+
+
+.education_titles_uni::after
+{
+    content: '';
+    position: absolute;
+
+    width: 0px;
+    margin-left: -180px;
+    margin-top: 50px;
+    height: 4px;
+    background-color: #c3083f;
+
+    transition-duration: 600ms;
+}
+
+.education_titles_uni:target > a
+{
+
+    color: #c3083f;
+    transition-duration: 600ms;
+    transition-delay: 750ms;
+
+
+
+}
+
+.education_titles_uni:target::after
+{
+    width: 177px;
+    transition-duration: 600ms;
+    transition-delay: 750ms;
+}
+
+/* #endregion */
+
+
+/* #region RETURN */
+
+.return
+{
+    background-color: black;
+
+    border: transparent 0px;
+
+    width: 80px;
+    height: 80px;
+    bottom: 24px;
+    left: 24px;
+
+    position: fixed;
+
+    border-radius: 100%;
+    user-select: none;
+
+    transition-duration: 400ms;
+
+}
+.return:hover
+{
+    border-radius: 0%;
+    border: solid #c3083f 2px;
+
+    transition-duration: 400ms;
+    
+}
+.return h1 
+{
+    font-family: bebas;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 52px;
+    transition-duration: 400ms;
+
+}
+.return h1 a{
+    text-decoration: none;
+    color: white;
+    transition-duration: 400ms;
+    user-select: none;
+
+}
+.return h1 a:hover
+{
+    color: #c3083f;
+    transition-duration: 400ms;
+}
+.return h2{
+    width: 120px;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-left: 14px;
+    margin-top: -89px;
+    font-family: source;
+    user-select: none;
+
+    transition-duration: 400ms;
+    
+}
+#return:hover > #goup
+{
+    color: #c3083f;
+    font-size: 20px;
+    margin-left: -10px;
+
+    margin-top: -134px;
+    transition-duration: 400ms;
+    
+}
+
+/* #endregion */
