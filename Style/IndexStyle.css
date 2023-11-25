@@ -91,7 +91,7 @@ body
 /* #region RETURN */
 .return
 {
-    z-index: 100;
+    z-index: 99;
     position: fixed;
     margin: 5rem;
     bottom: 0;
@@ -178,7 +178,7 @@ body
 header
 {
 
-    z-index: 98;
+    z-index: 97;
     width: 100%;
     background-color: #1A1A1C;
 }
@@ -223,7 +223,7 @@ nav ul li a:active
 
 .dropdown
 {
-    z-index: 99;
+    z-index: 98;
 
     width: fit-content;
     display: none;
@@ -301,6 +301,32 @@ li:hover .dropdown
 /* #endregion */
 
 /* #region MEDIA */
+
+@media (hover:hover)
+{
+    .greeting span:hover
+    {
+        font-size: 115%;
+        color: #30D5C8;
+        text-shadow: #C3083F .7rem .7rem;
+        transition-duration: 600ms;
+    }
+    nav ul li a:hover
+    {
+        color: white;
+        transition-duration: 300ms;
+        
+    }
+    .return a:hover
+    {
+        color: #C3083F;
+        border-radius: 1rem;
+        transition-duration: 400ms;
+
+    }
+
+}
+
 @media (max-width: 480px) {
     .return
     {
@@ -393,32 +419,25 @@ li:hover .dropdown
         margin-top: 8%;
     }
 
-
-}
-
-@media (hover:hover)
-{
     .greeting span:hover
     {
-        font-size: 115%;
-        color: #30D5C8;
-        text-shadow: #C3083F .7rem .7rem;
-        transition-duration: 600ms;
+        text-shadow: #C3083F .4rem .4rem;
     }
     nav ul li a:hover
     {
-        color: white;
-        transition-duration: 300ms;
+        color: rgb(119, 119, 119);
         
     }
     .return a:hover
     {
-        color: #C3083F;
-        border-radius: 1rem;
-        transition-duration: 400ms;
+        color: white;
+        border-radius: 100%;
 
     }
 
+
 }
+
+
 /* #endregion */
 
