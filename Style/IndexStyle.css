@@ -48,6 +48,7 @@ body
 
 .loading
 {
+
     position: fixed;
 
     display: grid;
@@ -191,7 +192,7 @@ body
 header
 {
 
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     background-color: #1A1A1C;
 }
@@ -241,7 +242,7 @@ nav ul li a:active
 
 .dropdown
 {
-    z-index: 100;
+    z-index: 99;
 
     width: fit-content;
     display: none;
