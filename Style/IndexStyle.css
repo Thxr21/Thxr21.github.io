@@ -91,7 +91,7 @@ body
 /* #region RETURN */
 .return
 {
-    z-index: 99;
+    z-index: 100;
     position: fixed;
     margin: 5rem;
     bottom: 0;
@@ -116,6 +116,7 @@ body
     transition-duration: 400ms;
 
 }
+
 
 
 
@@ -190,7 +191,7 @@ body
 header
 {
 
-    z-index: 100;
+    z-index: 99;
     width: 100%;
     background-color: #1A1A1C;
 }
@@ -240,6 +241,8 @@ nav ul li a:active
 
 .dropdown
 {
+    z-index: 100;
+
     width: fit-content;
     display: none;
 
@@ -311,6 +314,9 @@ li:hover .dropdown
         margin-top: -2.8rem;
         font-size: 2.2rem;
     }
+
+
+
 
 
 }
