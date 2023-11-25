@@ -328,6 +328,11 @@ li:hover .dropdown
 }
 
 @media (max-width: 480px) {
+    .loading
+    {
+        height: 100vh;
+    }
+
     .return
     {
         padding: 0;
