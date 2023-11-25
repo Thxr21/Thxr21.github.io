@@ -57,7 +57,7 @@ body
     top: 0;
     z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #1A1A1C;
 
     transition-duration: 1000ms;
@@ -109,13 +109,6 @@ body
     border-radius: 100%;
     transition-duration: 400ms;
 }
-.return a:hover
-{
-    color: #C3083F;
-    border-radius: 1rem;
-    transition-duration: 400ms;
-
-}
 
 
 
@@ -165,13 +158,7 @@ body
     transition-duration: 600ms;
 }
 
-.greeting span:hover
-{
-    font-size: 115%;
-    color: #30D5C8;
-    text-shadow: #C3083F .7rem .7rem;
-    transition-duration: 600ms;
-}
+
 
 .hero_container img
 {
@@ -227,12 +214,7 @@ nav ul li a
     transition-duration: 600ms;
 }
 
-nav ul li a:hover
-{
-    color: white;
-    transition-duration: 300ms;
-    
-}
+
 
 nav ul li a:active
 {
@@ -268,58 +250,7 @@ li:hover .dropdown
     
 }
 
-@media (max-width: 480px) {
-    .return
-    {
-        padding: 0;
-        margin: 0;
-        position: fixed;
-        top: 86vh;
-        left: 77vw;    
-    }   
-    .return a
-    {   
-        font-size: 4rem;
 
-    }
-
-    .hero_container
-    {
-        
-        max-width: 100vw;
-        height: 100vh;
-
-    }
-
-    .text
-    {
-        position: absolute;
-        margin-top: 45rem;
-    }
-    .hero_container img
-    {
-        position: absolute;
-        height: 84%;
-        margin-right: 14vw;
-        margin-top: 16vh;
-    }
-
-    .job
-    {
-        font-size: 1.4rem;
-    }
-
-    .greeting
-    {
-        margin-top: -2.8rem;
-        font-size: 2.2rem;
-    }
-
-
-
-
-
-}
 
 /* #endregion */
 
@@ -351,12 +282,6 @@ li:hover .dropdown
     transition-duration: 800ms; 
 }
 
-#abm_title:hover
-{
-    text-shadow: #C3083F .6rem .6rem;
-
-    transition-duration: 400ms; 
-}
 .intro
 {
     grid-area: intro;
@@ -373,5 +298,127 @@ li:hover .dropdown
     grid-area: education;
 }
 
-
 /* #endregion */
+
+/* #region MEDIA */
+@media (max-width: 480px) {
+    .return
+    {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 86vh;
+        left: 77vw;    
+    }   
+    .return a
+    {   
+        font-size: 4rem;
+
+    }
+
+    .hero_container
+    {
+        
+        max-width: 100%;
+        height: 100vh;
+
+    }
+
+    .text
+    {
+        position: absolute;
+        margin-top: -48rem;
+    }
+    
+    .hero_container img
+    {
+        position: absolute;
+        height: 70vh;
+        width: auto;
+        margin-right: 14vw;
+        margin-top: 30vh;
+    }
+
+    .job
+    {
+        font-size: 1.4rem;
+    }
+
+    .greeting
+    {
+        margin: 0 2rem;
+        margin-top: -2rem;
+        font-size: 1.8rem;
+    }
+
+    nav ul li a
+    {
+        padding: 1rem;
+        font-size: 2.2rem; 
+    }
+
+    nav ul.dropdown li a
+    {
+        padding: 1.2rem .7rem;
+
+    }
+
+    
+    .dropdown li
+    {
+        margin: .2rem 1rem;
+        
+    }
+
+
+    .dropdown
+    {
+        margin-top: -.3rem;
+        margin-left: -2rem;
+
+    }
+
+
+    .main_container
+    {
+
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+
+    }
+    .main_container h1
+    {
+        font-size: 7rem;
+        margin-top: 8%;
+    }
+
+
+}
+
+@media (hover:hover)
+{
+    .greeting span:hover
+    {
+        font-size: 115%;
+        color: #30D5C8;
+        text-shadow: #C3083F .7rem .7rem;
+        transition-duration: 600ms;
+    }
+    nav ul li a:hover
+    {
+        color: white;
+        transition-duration: 300ms;
+        
+    }
+    .return a:hover
+    {
+        color: #C3083F;
+        border-radius: 1rem;
+        transition-duration: 400ms;
+
+    }
+
+}
+/* #endregion */
+
