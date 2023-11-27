@@ -512,15 +512,15 @@ li:hover .dropdown
 
     .main_container
     {
-
+        border: solid #C3083F .2rem;
         width: 92%;
-        margin-left: 3%;
+        margin-left: 3.55%;
         margin-top: 5%;
 
     }
     .main_container h1
     {
-        font-size: 7rem;
+        font-size: 5.5rem;
         margin-top: 8%;
     }
 
@@ -544,24 +544,24 @@ li:hover .dropdown
 
     .main_container:hover
     {
-        border-color: transparent;
+        border-color: #C3083F;
     }
 
     .introTitle
     {
-        margin-top: -8rem;
+        margin-top: -6rem;
     }
 
     .introTitle h2
     {
 
-        font-size: 4.5rem;
+        font-size: 3.2rem;
 
     }
 
     .introContent
     {
-        margin-top: -3rem;
+        margin-top: -2rem;
         gap: .8rem;
         grid-template-columns: 1fr 2fr;
     }
@@ -666,6 +666,10 @@ li:hover .dropdown
         font-size: 2.8rem; 
     }
 
+    .main_container
+    {
+        border-color: #C3083F;
+    }
     .main_container h1
     {
         font-size: 8rem;
@@ -690,7 +694,7 @@ li:hover .dropdown
 
     .main_container:hover
     {
-        border-color: transparent;
+        border-color: #C3083F;
     }
 }
 
@@ -749,6 +753,10 @@ li:hover .dropdown
         font-size: 2.5rem; 
     }
 
+    .main_container
+    {
+        border-color: #C3083F;
+    }
     .main_container h1
     {
         font-size: 8rem;
@@ -772,7 +780,7 @@ li:hover .dropdown
     }
     .main_container:hover
     {
-        border-color: transparent;
+        border-color: #C3083F;
     }
 }
 
