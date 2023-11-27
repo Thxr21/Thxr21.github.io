@@ -21,6 +21,16 @@
     src: url(Fonts/Bebas.ttf);
 }
 
+@font-face {
+    font-family: OpenSans;
+    src: url(Fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(Fonts/OpenSans-Light.ttf);
+}
+
 
 /*#endregion*/
 
@@ -272,45 +282,123 @@ li:hover .dropdown
 
 .main_container
 {
+    border: solid transparent .4rem ;
+
     background-color: #313135;
 
     border-radius: 4rem;
-    width: 98%;
+    width: 96%;
     margin-top: 1%;
-    margin-left: 1%;
+    margin-left: 1.8%;
+
     display: grid;
+    
+
     grid-template-areas: 
+    "title"
     "intro"
     "skills"
     "education";
 
+    transition-duration: 600ms; 
+
 }
 .main_container h1
 {
+    grid-area: title;
+
+    margin-top: 4%;
     font-family: bebas;
-    color: white;
-    font-size: 12rem;
+    color: #C3083F;
+    font-size: 15rem;
     text-align: center;
     user-select: none;
 
-    transition-duration: 800ms; 
+    text-decoration: underline;
+
 }
+
+
+
+
 
 .intro
 {
+
+    width: 90%;
+    margin-left: 5%;
     grid-area: intro;
-
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "content";
 }
 
-.skills
+.introTitle
 {
-    grid-area: intro;
+    margin-top: -14rem;
+    grid-area: title;
+    width: 100%;
 }
 
-.education
+.introTitle h2
 {
-    grid-area: education;
+    grid-area: title;
+
+    font-family: bebas;
+    color: white;
+
+    font-size: 9rem;
+
+    text-align: center;
+    user-select: none;
 }
+
+.introContent
+{
+    margin-top: -8rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 3fr;
+}
+
+.introImage img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #262629;
+    border-radius: 2rem;
+}
+
+.introText
+{
+    
+    margin-top: -2rem;
+    display: block;
+    font-family: OpenSansLight;
+    letter-spacing: .2rem;
+    font-size: 2.6rem;
+}
+.introText .info
+{
+    margin-bottom: 0;
+}
+
+.introText ul
+{
+    margin-top: .5rem;
+}
+
+
+
+.introText ul li span
+{
+    color: #C3083F;
+    font-weight: bold;
+}
+
+
 
 /* #endregion */
 
@@ -337,6 +425,11 @@ li:hover .dropdown
         border-radius: 1rem;
         transition-duration: 400ms;
 
+    }
+
+    .main_container:hover
+    {
+        border-color: #C3083F;
     }
 
 }
@@ -366,16 +459,16 @@ li:hover .dropdown
     .text
     {
         position: absolute;
-        margin-top: -48rem;
+        margin-top: -42rem;
     }
     
     .hero_container img
     {
         position: absolute;
-        height: 70vh;
+        height: 65vh;
         width: auto;
         margin-right: 14vw;
-        margin-top: 30vh;
+        margin-top: 35vh;
     }
 
     .job
@@ -417,13 +510,12 @@ li:hover .dropdown
 
     }
 
-
     .main_container
     {
 
-        width: 90%;
+        width: 92%;
+        margin-left: 3%;
         margin-top: 5%;
-        margin-left: 5%;
 
     }
     .main_container h1
@@ -431,6 +523,8 @@ li:hover .dropdown
         font-size: 7rem;
         margin-top: 8%;
     }
+
+    
 
     .greeting span:hover
     {
@@ -446,6 +540,45 @@ li:hover .dropdown
         color: white;
         border-radius: 100%;
 
+    }
+
+    .main_container:hover
+    {
+        border-color: transparent;
+    }
+
+    .introTitle
+    {
+        margin-top: -8rem;
+    }
+
+    .introTitle h2
+    {
+
+        font-size: 4.5rem;
+
+    }
+
+    .introContent
+    {
+        margin-top: -3rem;
+        gap: .8rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .introText
+    {
+        
+        margin-top: -1rem;
+        letter-spacing: 0rem;
+        font-size: 1.1rem;
+    }
+
+
+    .introText ul
+    {
+        margin-top: .2rem;
+        margin-left: -2.8rem;
     }
 
 
@@ -555,7 +688,10 @@ li:hover .dropdown
 
     }
 
-    
+    .main_container:hover
+    {
+        border-color: transparent;
+    }
 }
 
 @media (min-width: 480.5px) and (max-width: 800px) and (max-height: 500px) {
@@ -633,6 +769,10 @@ li:hover .dropdown
         color: white;
         border-radius: 100%;
 
+    }
+    .main_container:hover
+    {
+        border-color: transparent;
     }
 }
 
