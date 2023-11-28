@@ -318,7 +318,18 @@ li:hover .dropdown
 
 }
 
+.main_container h2
+{
+    grid-area: title;
 
+    font-family: bebas;
+    color: white;
+
+    font-size: 9rem;
+
+    text-align: center;
+    user-select: none;
+}
 
 
 
@@ -341,21 +352,10 @@ li:hover .dropdown
     width: 100%;
 }
 
-.introTitle h2
-{
-    grid-area: title;
-
-    font-family: bebas;
-    color: white;
-
-    font-size: 9rem;
-
-    text-align: center;
-    user-select: none;
-}
 
 .introContent
 {
+    grid-area: content;
     margin-top: -8rem;
     display: grid;
     gap: 2rem;
@@ -377,7 +377,6 @@ li:hover .dropdown
     margin-top: -2rem;
     display: block;
     font-family: OpenSansLight;
-    letter-spacing: .2rem;
     font-size: 2.6rem;
 }
 .introText .info
@@ -398,6 +397,169 @@ li:hover .dropdown
     font-weight: bold;
 }
 
+
+.skills
+{
+    width: 90%;
+    margin-left: 5%;
+    grid-area: skills;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "content";
+}
+
+
+
+.skillContent
+{
+    margin-top: -8rem;
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+    "text"
+    "langs";
+
+}
+
+.skillText
+{
+    grid-area: text;
+    margin-top: -1rem;
+    display: block;
+    font-family: OpenSansLight;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.languages
+{
+    
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 0%;
+    grid-area: langs;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: 
+    "Py js c"
+    "php sqlDB html";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50rem 50rem;
+    
+
+
+}
+
+/* #region LANGUAGES */
+
+    #py
+    {
+        grid: py;
+        
+    }
+    #js
+    {
+        grid: js;
+        
+    }
+
+    #c
+    {
+        grid: c;
+        
+    }
+
+    #php
+    {
+        grid: php;
+        
+    }
+
+    #db
+    {
+        grid: sqlDB;
+        
+    }
+
+    #htmlcss
+    {
+        grid: html;
+    }
+
+    .langDiv
+    {
+        
+        border-radius: 3rem;
+        width: 100%;
+        background-color: #262629;
+    }
+    .langDiv h3
+    {
+        user-select: none;
+        font-family: bebas;
+        color: white;
+        text-align: center;
+        font-size: 6rem;
+        margin-bottom: 0;
+
+        transition-duration: 800ms;
+    }
+    .langDiv p
+    {
+        font-family: openSans;
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 0 2rem;
+
+
+        margin-top: -26rem;
+
+        color: transparent;
+        transition-duration: 1000ms;
+
+        
+    }
+    .langDiv img
+    {
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 70%;
+        transition-duration: 600ms;
+        transition-delay: 300ms;
+
+    }
+    .skillText span
+    {
+        color: #C3083F;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+
+    .langDiv:hover
+    {
+        background-color: #C3083F;
+    }
+    .langDiv:hover > img
+    {
+        opacity: 0;
+        transition-duration: 800ms;
+
+    }
+    .langDiv:hover > h3
+    {
+        color: #262629;
+        transition-duration: 1000ms;
+        transition-delay: 600ms;
+    }
+    .langDiv:hover > p
+    {
+        color: #262629;
+
+        transition-duration: 1400ms;
+        transition-delay: 1300ms;
+    }
+/* #endregion */
 
 
 /* #endregion */
@@ -552,7 +714,7 @@ li:hover .dropdown
         margin-top: -6rem;
     }
 
-    .introTitle h2
+    .main_container h2
     {
 
         font-size: 3.2rem;
@@ -561,7 +723,7 @@ li:hover .dropdown
 
     .introContent
     {
-        margin-top: -2rem;
+        margin-top: -2.3rem;
         gap: .8rem;
         grid-template-columns: 1fr 2fr;
     }
@@ -570,7 +732,6 @@ li:hover .dropdown
     {
         
         margin-top: -1rem;
-        letter-spacing: 0rem;
         font-size: 1.1rem;
     }
 
@@ -581,9 +742,98 @@ li:hover .dropdown
         margin-left: -2.8rem;
     }
 
+    .skills
+    {
+        width: 90%;
+        margin-left: 5%;
+        grid-area: skills;
+        display: grid;
+        grid-template-areas: 
+        "title"
+        "content";
+    }
+
+
+
+    .skillContent
+    {
+        margin-top: -8rem;
+        grid-area: content;
+        display: grid;
+        grid-template-areas: 
+        "text"
+        "langs";
+
+    }
+
+    .skillText
+    {
+        margin-top: 4.5rem;
+        display: block;
+        font-family: OpenSansLight;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .languages
+    {
+        
+        width: 100%;
+        margin-left: 0%;
+        gap: 1.5rem;
+        grid-template-areas: 
+        "Py js"
+        "c php"
+        "sqlDB html";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25rem 25rem 25rem;
+        
+
+
+    }
+
+
+
+    .langDiv h3
+    {
+        font-size: 3rem;
+        margin-bottom: 0;
+
+        transition-duration: 800ms;
+    }
+    .langDiv p
+    {
+        font-family: openSans;
+        font-size: 1.1rem;
+        text-align: center;
+
+
+        margin-top: -12rem;
+
+        color: transparent;
+        transition-duration: 1000ms;
+
+        
+    }
+
+    .skillText span
+    {
+        font-size: 1.4rem;
+    }
+
 
 }
 
+@media (min-width: 434px) and (max-width: 480px) {
+    .langDiv p
+    {
+        font-size: 1.2rem;
+
+
+        margin-top: -13rem;
+
+    }
+}
 
 @media (min-width: 480.5px) and (max-width: 1280px) {
     
@@ -676,6 +926,44 @@ li:hover .dropdown
         margin-top: 4%;
     }
 
+    .introTitle
+    {
+        margin-top: -10rem;
+    }
+
+    .introTitle h2
+    {
+
+
+        font-size: 5.5rem;
+
+    }
+
+    .introContent
+    {
+        gap: 1rem;
+        margin-top: -4rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    .introText
+    {
+        
+        margin-top: -2rem;
+        display: block;
+        font-family: OpenSansLight;
+        font-size: 2rem;
+    }
+
+    .introText ul
+    {
+        margin-top: .4rem;
+        margin-left: -.8rem;
+    }
+
+
+
     .greeting span:hover
     {
         text-shadow: #C3083F .4rem .4rem;
@@ -759,8 +1047,41 @@ li:hover .dropdown
     }
     .main_container h1
     {
-        font-size: 8rem;
+        font-size: 7rem;
         margin-top: 4%;
+    }
+
+    .introTitle
+    {
+        margin-top: -7rem;
+    }
+
+    .introTitle h2
+    {
+
+        font-size: 4.5rem;
+
+    }
+
+    .introContent
+    {
+        gap: 1rem;
+        margin-top: -3.5rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    .introText
+    {
+        
+        margin-top: -1.8rem;
+        font-size: 1.8rem;
+    }
+
+    .introText ul
+    {
+        margin-top: .3rem;
+        margin-left: -1rem;
     }
 
     .greeting span:hover
