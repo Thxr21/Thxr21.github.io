@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv="refresh" content="url=index.html">
+    <link rel="shortcut icon" href="Images/icon.ico">
     <link rel="preload" href="Style/Fonts/Bebas.ttf" as="font" type="font/tff" crossorigin>
     <link rel='stylesheet' type='text/css' media='screen' href='Style/IndexStyle.css'>
     <link rel="stylesheet" href="text/css" media="screen" href="Style/IndexMediaStyle.css">
@@ -57,7 +58,7 @@
                     <ul class="dropdown">
                         <li><a href="#intro">Introduction</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#education">Education & Experience</a></li>
                     </ul>
                 </li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -182,6 +183,19 @@
 
         </div>
         <div class="education" id="education">
+            <div class="eduTitle">
+                <h2>Education & Experience</h2>
+            </div>
+            <div class="eduContent">
+                <div class="choice">
+                    <div><a href="index_iframe_pages/indexEducation.html" target="eduDisplay">Education</a></div>
+                    <div><a href="index_iframe_pages/indexCertifications.html" target="eduDisplay">Certifications</a></div>
+                    <div><a href="index_iframe_pages/indexExperience.html" target="eduDisplay">Experience</a></div>
+                </div>
+                <div class="display">
+                    <iframe src="index_iframe_pages/indexEduPlaceholder.html" frameborder="0" name="eduDisplay" width="100%"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </body>

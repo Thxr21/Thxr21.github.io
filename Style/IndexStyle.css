@@ -301,6 +301,8 @@ li:hover .dropdown
     border-radius: 4rem;
     width: 96%;
     margin-top: 1%;
+    margin-bottom: .8%;
+
     margin-left: 1.8%;
 
     display: grid;
@@ -567,6 +569,99 @@ li:hover .dropdown
    
 /* #endregion */
 
+/* #region EDUCATION AND EXPERIENCE*/
+
+.education
+{   
+    width: 90%;
+    margin-left: 5%;
+    grid-area: education;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "content";
+}
+
+.eduTitle
+{
+    width: 100%;
+    grid-area: title;
+}
+
+.eduContent
+{
+    grid-area: content;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "choice"
+    "display";
+
+}
+.choice
+{
+    margin-top: -6rem;
+    grid-area: choice;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.choice div
+{
+    text-align: center;
+    background-color: #262629;
+    padding: 3rem 0;
+    border-radius: 4rem;
+    border: solid transparent .4rem;
+}
+.choice div a
+{
+    color: white;
+    font-family: bebas;
+    font-size: 5rem;
+    text-decoration: none;
+    user-select: none;
+}
+
+.choice div:hover
+{
+    border-color: #C3083F;
+}
+.choice div a:hover
+{
+    color: #C3083F;
+}
+
+.display
+{
+    justify-self: center;
+    grid-area: display;
+    width: 80%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid transparent .4rem;
+    border-radius: 2rem;
+
+}
+.display iframe
+{
+    height: 30rem;
+    width: 100%;
+    border-radius: 2rem;
+
+}
+.display:hover
+{
+    border-color: #C3083F;
+}
+
+
+
+
+
+/* #endregion */
 
 /* #endregion */
 
@@ -599,16 +694,16 @@ li:hover .dropdown
     .text
     {
         position: absolute;
-        margin-top: -42rem;
+        margin-top: -36rem;
     }
     
     .hero_container img
     {
         position: absolute;
-        height: 65vh;
+        height: 62vh;
         width: auto;
         margin-right: 14vw;
-        margin-top: 35vh;
+        margin-top: 38vh;
     }
 
     .job
