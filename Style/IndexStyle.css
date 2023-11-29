@@ -134,6 +134,28 @@ body
     transition-duration: 400ms;
 }
 
+.return p
+{
+    position: absolute;
+    margin-top: -90%;
+    color: transparent;
+    font-family: bebas;
+    font-size: 2rem;
+    margin-left: 29%;
+    transition-duration: 600ms;
+    user-select: none;
+}
+
+.return a:hover ~ p
+{
+    margin-top: -126%;
+    margin-left: 14%;
+    font-size: 3.5rem;
+
+    color: #C3083F;
+    
+
+}
 
 .return a:hover
 {
@@ -237,6 +259,8 @@ nav ul li a
 
 
     text-decoration: none;
+
+
     color: rgb(119, 119, 119);
     font-family: bebas;
     font-size: 4rem; 
@@ -329,6 +353,8 @@ li:hover .dropdown
     user-select: none;
 
     text-decoration: underline;
+
+
 
 }
 
@@ -501,8 +527,11 @@ li:hover .dropdown
 
     user-select: none;
 
+    
+
     transition-duration: 1000ms;
     transition-delay: 200ms;
+
 
     
 }
@@ -614,6 +643,8 @@ li:hover .dropdown
     padding: 3rem 0;
     border-radius: 4rem;
     border: solid transparent .4rem;
+    transition-duration: 600ms;
+
 }
 .choice div a
 {
@@ -622,15 +653,25 @@ li:hover .dropdown
     font-size: 5rem;
     text-decoration: none;
     user-select: none;
+
+    background-image: linear-gradient(90deg,#C3083F,#C3083F);
+    background-repeat: no-repeat;
+    background-size: 0% .5rem;
+    background-position: center 94%;
+    
+    transition: color 600ms, background-size  1000ms;
 }
 
 .choice div:hover
 {
     border-color: #C3083F;
+
 }
 .choice div a:hover
 {
     color: #C3083F;
+    background-size: 100% .5rem;
+
 }
 
 .display
@@ -643,6 +684,8 @@ li:hover .dropdown
     margin-bottom: 2rem;
     border: solid transparent .4rem;
     border-radius: 2rem;
+
+    transition-duration: 600ms;
 
 }
 .display iframe
@@ -691,6 +734,10 @@ li:hover .dropdown
     }
 
 
+    .return p
+    {
+        display: none;
+    }
     .text
     {
         position: absolute;
@@ -910,6 +957,10 @@ li:hover .dropdown
     {   
         font-size: 3.5rem;
     }
+    .return p
+    {
+        display: none;
+    }
 
     .text
     {
@@ -1112,6 +1163,10 @@ li:hover .dropdown
 {
     
 
+    .return p
+    {
+        display: none;
+    }
     /* #region SKILL */
     .skills
     {
@@ -1199,6 +1254,10 @@ li:hover .dropdown
     .return a
     {   
         font-size: 2.4rem;
+    }
+    .return p
+    {
+        display: none;
     }
 
     .text
