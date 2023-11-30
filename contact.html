@@ -8,10 +8,31 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel="icon" type="image/png" href="Images/B_logo.png">
-    <link rel='stylesheet' type='text/css' media='screen' href='ContactStyle.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Style/ContactStyle.css'>
+    <script src="Scripts/loadingScript.js"></script>
     <script src='Scripts/ContactScript.js'></script>
 </head>
 <body>
-    
+    <div class="loading" >
+        <h1>Loading, <span>Please wait...</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Contact me</h1>
+        </div>
+        <div class="contactParagraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda saepe suscipit a error possimus vero, veniam aperiam earum quis dolore unde deserunt fugiat neque reiciendis eos et repellat, nam tempore!</p>
+        </div>
+        <div class="contactForm">
+            <form onsubmit="return formVerification()" action="contact.php" method="POST">
+                <fieldset>
+                    <table>
+                        
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

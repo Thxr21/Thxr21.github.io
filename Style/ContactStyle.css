@@ -1,0 +1,170 @@
+/* #region FONTS */
+
+@font-face {
+    font-family: Source;
+    src: url(Fonts/Source.ttf);
+}
+
+@font-face {
+    font-family: Mailand;
+    src: url(Fonts/Mailand.otf);
+}
+
+@font-face {
+    font-family: Glimp;
+    src: url(Fonts/Glimp.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(Fonts/Bebas.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(Fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(Fonts/OpenSans-Light.ttf);
+}
+
+
+/*#endregion*/
+
+:root{
+    font-size: 62.5%;
+}
+::-webkit-scrollbar
+{
+    background-color: #1A1A1C;
+
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+    background-color: #30D5C8;
+
+}
+
+html
+{
+    scroll-behavior: smooth;
+    
+}
+body
+{
+    width: 100%;
+    background-color: #262629;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* #region LOADING PAGE */
+
+.loading
+{
+
+    position: fixed;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1A1C;
+
+    transition-duration: 1000ms;
+    
+
+}
+.loading h1{
+    color: #30D5C8;
+    
+
+    font-family: bebas;
+    font-size: 10vw;
+
+
+    text-align: center;
+    user-select: none;
+
+}
+.loading h1 span{
+    color: white;
+
+}
+.loading_hide
+{
+    opacity: 0;
+    visibility: hidden;    
+}
+
+/* #endregion */
+
+.container
+{
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "paragraph"
+    "form";
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title
+{
+    grid-area: title;
+    text-align: center;
+
+}
+
+.title h1
+{
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+    color: #30D5C8;
+    font-family: mailand;
+    font-size: 10rem;
+    user-select: none;
+}
+
+.contactParagraph
+{
+    margin-top: -1.5%;
+    grid-area: paragraph;
+    text-align: center;
+}
+.contactParagraph p
+{
+    font-family: openSans;
+    font-size: 1.8rem;
+}
+
+.contactForm
+{
+    grid-area: form;
+    margin-top: 1rem;
+    width: 80%;
+    justify-self: center;
+}
+
+
+.contactForm fieldset
+{
+    border: solid #30D5C8 .25rem;
+    border-radius: 2rem;
+}
