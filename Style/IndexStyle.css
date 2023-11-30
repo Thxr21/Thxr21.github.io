@@ -708,6 +708,38 @@ li:hover .dropdown
 
 /* #endregion */
 
+/* #region FOOTER */
+footer
+{
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #1A1A1C;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div
+{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+footer div p
+{
+    font-family: glimp;
+    font-size: 3rem;
+}
+
+footer div p span
+{
+    color: #30D5C8;
+    font-family: mailand;
+    font-size: 3.5rem;
+}
+
+
+/* #endregion */
 
 /* #region MEDIA*/
 
@@ -837,6 +869,7 @@ li:hover .dropdown
         font-size: 3.2rem;
 
     }
+    
 
     /* #region INTRO*/
     .introTitle
@@ -973,7 +1006,7 @@ li:hover .dropdown
     {
         width: 100%;
         margin-top: 1rem;
-        margin-bottom: 8rem;
+        margin-bottom: 1rem;
         border: solid transparent .2rem;
 
         transition-duration: 600ms;
@@ -992,6 +1025,32 @@ li:hover .dropdown
 
 /* #endregion */
 
+    /* #region FOOTER */
+    footer
+    {
+        margin-top: 2rem;
+        padding: 0rem 0;
+        border-radius: 2rem 2rem 0 0;
+    }
+    footer div
+    {
+        display: block;
+        margin: 0 0rem;
+        text-align: center;
+    }
+
+    footer div p
+    {
+        font-size: 1.5rem;
+    }
+
+    footer div p span
+    {
+        font-size: 2rem;
+    }
+
+
+    /* #endregion */
 }
 
 
@@ -1258,7 +1317,7 @@ li:hover .dropdown
     {
         width: 100%;
         margin-top: 1rem;
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
         border: solid transparent .3rem;
 
 
@@ -1276,6 +1335,31 @@ li:hover .dropdown
 
     /* #endregion */
 
+    /* #region FOOTER */
+    footer
+    {
+        margin-top: 2rem;
+        padding: 0rem 0;
+        border-radius: 2rem 2rem 0 0;
+    }
+    footer div
+    {
+        margin: 0 2rem;
+        text-align: center;
+    }
+
+    footer div p
+    {
+        font-size: 2rem;
+    }
+
+    footer div p span
+    {
+        font-size: 2.5rem;
+    }
+
+
+    /* #endregion */
 }
 
 @media (min-width: 700px) and (max-width: 885px)
@@ -1394,7 +1478,7 @@ li:hover .dropdown
     {
         width: 100%;
         margin-top: 1rem;
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
         border: solid transparent .3rem;
 
 
@@ -1407,7 +1491,34 @@ li:hover .dropdown
 
 
 
+    
 
+
+
+    /* #endregion */
+    /* #region FOOTER */
+    footer
+    {
+        margin-top: 2rem;
+        padding: 0rem 0;
+        border-radius: 2rem 2rem 0 0;
+    }
+    footer div
+    {
+        display: inline-block;
+        margin: 0 2rem;
+        text-align: center;
+    }
+
+    footer div p
+    {
+        font-size: 1.5rem;
+    }
+
+    footer div p span
+    {
+        font-size: 2rem;
+    }
 
 
     /* #endregion */
