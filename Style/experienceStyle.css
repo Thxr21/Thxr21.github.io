@@ -33,55 +33,6 @@
 
 /*#endregion*/
 
-/* #region LOADING PAGE */
-
-.loading
-{
-
-    position: fixed;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    margin-left: -1%;
-
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100vh;
-    background-color: #1A1A1C;
-
-    transition-duration: 1000ms;
-    transition-delay: 2000ms;
-
-    
-
-}
-.loading h1{
-    color: white;
-
-    
-
-    font-family: bebas;
-    font-size: 7vw;
-
-
-    text-align: center;
-    user-select: none;
-
-}
-.loading h1 span{
-    color: #C3083F;
-
-}
-.loading_hide
-{
-    opacity: 0;
-    visibility: hidden;    
-}
-
-/* #endregion */
 
 body
 {
