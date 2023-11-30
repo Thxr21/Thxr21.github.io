@@ -53,7 +53,7 @@
     background-color: #1A1A1C;
 
     transition-duration: 1000ms;
-    transition-delay: 1000ms;
+    transition-delay: 2000ms;
 
     
 
@@ -109,7 +109,8 @@ body
     padding: 0;
     margin: 0;
     margin-top: 4vh;
-    font-size: 5vw;
+    font-size: 4.5rem;
+
     font-family: bebas;
     user-select: none;
     text-decoration: underline;
@@ -120,8 +121,12 @@ body
     margin-top: -.5vw;
     color: white;
     font-family: openSans;
-    font-size: 1.4vw;
+    font-size: 1.2rem;
+
 }
+
+
+
 
 
 
@@ -129,4 +134,47 @@ span
 {
     font-weight: bold;
     color: #C3083F;
+}
+
+
+@media (max-width:611px) {
+
+    .title h1
+    {
+        font-size: 2rem;
+    }
+
+    .content
+    {
+        font-size: .6rem;
+
+    }
+}
+
+@media (min-width:612px) and (max-width:1160px) {
+    .title h1
+    {
+        font-size: 3rem;
+
+    }
+
+    .content
+    {
+        font-size: .7rem;
+
+    }
+}
+
+@media (min-width:612px) and (max-width:1160px) and (min-height:300px) {
+    .title h1
+    {
+        font-size: 3.5rem;
+
+    }
+
+    .content
+    {
+        font-size: .9rem;
+
+    }
 }
