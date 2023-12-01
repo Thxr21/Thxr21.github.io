@@ -22,14 +22,39 @@
             <h1>Contact me</h1>
         </div>
         <div class="contactParagraph">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda saepe suscipit a error possimus vero, veniam aperiam earum quis dolore unde deserunt fugiat neque reiciendis eos et repellat, nam tempore!</p>
+            <p>
+                For inquiries regarding employment opportunities, credential verification, or to obtain additional information, please feel free to reach out to me using the form provided below. Kindly complete the form with your details and submit it at your earliest convenience. I look forward to the prospect of connecting with you.
+            </p>
         </div>
         <div class="contactForm">
             <form onsubmit="return formVerification()" action="contact.php" method="POST">
                 <fieldset>
                     <table>
-                        
+                        <tr>
+                            <td>
+                                <input type="text" id="name" name="name" placeholder="Type your name here...">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="company" name="company" placeholder="What company do you work for?">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" name="email" id="email" placeholder="Your e-mail goes here...">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="message" id="message" placeholder="And your message goes here..."></textarea>
+                            </td>
+                        </tr>
                     </table>
+                    <div class="buttonContainer">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                    </div>
                 </fieldset>
             </form>
         </div>
