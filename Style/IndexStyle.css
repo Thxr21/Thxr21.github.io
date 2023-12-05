@@ -208,8 +208,8 @@ body
     background: linear-gradient(140deg, rgba(255,255,255,1) 15%, rgba(195,8,63,1) 15%, rgba(195,8,63,1) 49%, rgba(255,255,255,1) 50%, rgba(195,8,63,1) 51%, rgba(195,8,63,1) 85%, rgba(255,255,255,1) 85%);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-background-clip: text;
     animation: gradientText 14s linear infinite;
 
     
