@@ -65,6 +65,7 @@ body
     color: white;
 }
 
+
 /* #region LOADING PAGE */
 
 .loading
@@ -111,161 +112,267 @@ body
 
 /* #endregion */
 
-.container
-{
-    width: 80%;
-    margin-left: 10%;
-    display: grid;
-    grid-template-areas: 
-    "title"
-    "paragraph"
-    "form"
-    "buttons";
-    justify-content: center;
-    gap: 1rem;
-}
-
-.title
-{
-    grid-area: title;
-    text-align: center;
-
-}
 
 .title h1
 {
+    background: linear-gradient(140deg, rgba(48,213,200,1) 0%, rgba(48,213,200,1) 19%, rgba(255,255,255,1) 20%, rgba(48,213,200,1) 21%, rgba(48,213,200,1) 49%, rgba(255,255,255,1) 50%, rgba(48,213,200,1) 51%, rgba(48,213,200,1) 79%, rgba(255,255,255,1) 80%, rgba(48,213,200,1) 81%, rgba(48,213,200,1) 100%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientText 30s linear infinite;
+
+    margin-top: 6%;
+    font-size: 8rem;
+    font-family: mailand;
     margin: 0;
     padding: 0;
-    margin-top: 2%;
-    color: #30D5C8;
-    font-family: mailand;
-    font-size: 10rem;
+    text-align: center;
     user-select: none;
 }
 
-.contactParagraph
+
+@keyframes gradientText {
+    0%{
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+    
+}
+
+.container .contactParagraph
 {
-    margin-top: -1.5%;
-    grid-area: paragraph;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2.2%;
+    margin-top: -1%;
+    text-align: center;
+
+    font-family: openSans;
+    font-size: 2.5rem;
+}
+
+fieldset
+{
+    width: 40%;
+    margin-left: 29%;
+    border: #30D5C8 solid .3rem;
+    border-radius: 2rem;
+
+}
+
+table 
+{
+    width: 100%;
+
+}
+td
+{
     text-align: center;
 }
-.contactParagraph p
+table .text
 {
     font-family: openSans;
-    font-size: 2rem;
-}
 
-.contactForm
-{
-    grid-area: form;
-    margin-top: 1rem;
-    width: 80%;
-    justify-self: center;
-}
-
-
-.contactForm fieldset
-{
-    border: solid #30D5C8 .25rem;
+    margin-top: 1%;
     border-radius: 2rem;
-}
-.contactForm table
-{
-    width: 80%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 10%;
-}
-
-.contactForm td
-{
-    padding: .4rem 0;
-}
-
-.contactForm table input
-{
-    color: white;
-    width: 100%;
-    background-color: #313135;
-    border: solid transparent .2rem;
-    border-radius: 1.2rem;
-
+    width: 97%;
     font-size: 2.2rem;
-    font-family: opensans;
     padding: 1rem;
+    border: none;
+
+    outline: none;
+
+    background-color: #313135;
+    color: white;
+
+}
+
+table select
+{
     text-align: center;
-    transition-duration: 600ms;
+    margin-top: 1%;
+    border-radius: 2rem;
+    font-size: 2.2rem;
+    padding: 1rem;
+    border: none;
+
+    background-color: #313135;
+    color: white;
 }
 
-
-.contactForm textarea
+.subject
 {
-    color: white;
-    resize: none;
-    width: 100%;
-    background-color: #313135;
-    border: solid transparent .2rem;
-    border-radius: 1.2rem;
+    padding-top: 1%;
 
     font-size: 2.2rem;
-    font-family: opensans;
+    font-family: openSans;
+
+}
+
+.subject label
+{
+    font-family: bebas;
+    font-size: 3.8rem;
+
+}
+
+.radio
+{
+    cursor: pointer;
+}
+
+
+#message
+{
+    font-size: 2.2rem;
+
+    background-color: #313135;
+    color: white;
+
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: openSans;
+    width: 98%;
+    border-radius: 2rem;
     padding: 1rem;
-
-    height: 25rem;
-    
-    transition-duration: 600ms;
-
-}
-
-.contactForm table input:focus
-{
-    outline: none;
-    border-color: #30D5C8;
-}
-
-.contactForm textarea:focus
-{
-    outline: none;
-    border-color: #30D5C8;
-    
+    height: auto;
 }
 
 .buttonContainer
 {
-    grid-area: buttons;
-    width: 40%;
-    margin-left: 32%;
-    margin-bottom: 1%;
-    margin-top: -1%;
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
 }
-
-.buttonContainer input
+.buttonContainer input 
 {
-    width: 48%;
-    border: solid #30D5C8 .2rem;
-    color: #30D5C8;
     font-family: mailand;
-    font-size: 4rem;
-
-    margin: 0 .5%;
-    padding: 0.4rem 0rem;
-
-    background-color: #313135;
+    font-size: 3rem;
+    padding: 0 2.5rem;
+    color: #30D5C8;
+    background-color: #1A1A1C;
+    border: solid #30D5C8 .2rem;
     border-radius: 1.2rem;
 
-    cursor: pointer;
 
-    transition-duration: 400ms;
 
-}
-
-.buttonContainer input:hover
-{
-    border-color: #C3083F;
 }
 
 .buttonContainer input:active
 {
     color: #C3083F;
-    transition-duration: 0ms;
+    border-color: #C3083F;
 }
+
+/* #region MEDIA */
+
+@media (max-width: 885px) {
+    .title h1
+    {
+        margin-top: 4%;
+        font-size: 6.4rem;
+    }
+
+    .container .contactParagraph
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+        margin-top: -3%;
+
+        font-size: 1.6rem;
+    }
+
+    fieldset
+    {
+        width: 80%;
+        margin: auto;
+        border: #30D5C8 solid 0.2rem;
+
+    }
+
+    table 
+    {
+        width: 100%;
+    }
+
+    table .text
+    {
+
+        margin-top: 1%;
+        width: 90%;
+        font-size: 1.4rem;
+
+
+    }
+
+    table select
+    {
+        margin-top: 1%;
+        font-size: 1.4rem;
+        padding: 1rem;
+
+    }
+    .subject
+    {
+
+        font-size: 1.4rem;
+
+    }
+
+    .subject label
+    {
+        font-size: 3rem;
+
+    }
+
+
+
+    #message
+    {
+        font-size: 1.4rem;
+        width: 90%;
+
+    }
+
+    .buttonContainer
+    {
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+    }
+    .buttonContainer input 
+    {
+        font-family: mailand;
+        font-size: 2rem;
+        padding: 0 2.5rem;
+        color: #30D5C8;
+        background-color: #1A1A1C;
+        border: solid #30D5C8 .2rem;
+        border-radius: 1.2rem;
+
+
+
+    }
+
+}
+@media (min-width: 490px) and (max-width: 885px){
+    .container .contactParagraph
+    {
+        margin-bottom: 4%;
+    
+    }
+
+}
+@media (min-width: 886px) and (max-width: 1280px) {
+
+}
+@media (min-width: 480.5px) and (max-width: 800px) and (max-height: 500px) {
+
+}
+
+/* #endregion */

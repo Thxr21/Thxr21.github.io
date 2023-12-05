@@ -205,12 +205,25 @@ body
 
 .greeting span
 {
+    background: linear-gradient(140deg, rgba(255,255,255,1) 15%, rgba(195,8,63,1) 15%, rgba(195,8,63,1) 49%, rgba(255,255,255,1) 50%, rgba(195,8,63,1) 51%, rgba(195,8,63,1) 85%, rgba(255,255,255,1) 85%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientText 14s linear infinite;
+
     
-    color: #C3083F;
-    transition-duration: 600ms;
 }
 
-
+@keyframes gradientText {
+    0%{
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+    
+}
 
 .hero_container img
 {
@@ -439,13 +452,7 @@ li:hover .dropdown
     font-weight: bold;
 }
 
-.greeting span:hover
-{
-    font-size: 115%;
-    color: #30D5C8;
-    text-shadow: #C3083F .7rem .7rem;
-    transition-duration: 600ms;
-}
+
 
 
 /* #endregion */

@@ -32,22 +32,39 @@
                     <table>
                         <tr>
                             <td>
-                                <input type="text" id="name" name="name" placeholder="Type your name here...">
+                                <input type="text" id="name" name="name" placeholder="Your name goes here..." class="text">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" id="company" name="company" placeholder="What company do you work for?">
+                                <input type="email" id="mail" name="mail" placeholder="And your e-mail here..." class="text">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="email" name="email" id="email" placeholder="Your e-mail goes here...">
+                                <select name="reason" id="reason">
+                                    <option selected disabled id="selectDis">Reason of Contact</option>
+                                    <option value="Employment">Employment Opportunity.</option>
+                                    <option value="Info">Requesting Further Information.</option>
+                                    <option value="Other">Other.</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
+                            <td class="subject">
+                                <label for="subject">Subject:</label>
+                                <br>
+                                <input type="radio" id="subject" name="subject" value="Back-end" class="radio"> Back-end Development.
+                                <br>
+                                <input type="radio" id="subject" name="subject" value="Front-end" class="radio"> Front-end Development.
+                                <br>
+                                <input type="radio" id="subject" name="subject" value="Other" class="radio"> Other.
+                            </td>
+                        </tr>
+                        <tr>
+
                             <td>
-                                <textarea name="message" id="message" placeholder="And your message goes here..."></textarea>
+                                <textarea name="message" id="message" rows="5" placeholder="Write your message here..."></textarea>
                             </td>
                         </tr>
                     </table>
