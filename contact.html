@@ -12,7 +12,7 @@
     <script src="Scripts/loadingScript.js"></script>
     <script src='Scripts/ContactScript.js'></script>
 </head>
-<body>
+<body onload="clearError()">
     <div class="loading" >
         <h1>Loading, <span>Please wait...</span></h1>
     </div>
@@ -23,7 +23,6 @@
         </div>
         <div class="contactParagraph">
             <p>
-                For inquiries regarding employment opportunities, credential verification, or to obtain additional information, please feel free to reach out to me using the form provided below. Kindly complete the form with your details and submit it at your earliest convenience. I look forward to the prospect of connecting with you.
             </p>
         </div>
         <div class="contactForm">
@@ -32,12 +31,24 @@
                     <table>
                         <tr>
                             <td>
-                                <input type="text" id="name" name="name" placeholder="Your name goes here..." class="text" required>
+                                <p id="error">
+                                    Message Error: The message must consist of only alphabetic letters, numbers and spaces and must not be empty.
+                                </p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="email" id="mail" name="mail" placeholder="And your e-mail here..." class="text" required>
+                                <input type="text" id="fname" name="name" placeholder="Your first name goes here..." class="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="lname" name="name" placeholder="And your last name here..." class="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" id="mail" name="mail" placeholder="Write your e-mail here..." class="text" required>
                             </td>
                         </tr>
                         <tr>
@@ -64,13 +75,13 @@
                         <tr>
 
                             <td>
-                                <textarea name="message" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <textarea name="message" id="message" rows="5" placeholder="Write the message you want to send me here..." required></textarea>
                             </td>
                         </tr>
                     </table>
                     <div class="buttonContainer">
                         <input type="submit" value="Send">
-                        <input type="reset" value="Clear">
+                        <input type="reset" value="Clear" onclick="clearError()">
                     </div>
                 </fieldset>
             </form>

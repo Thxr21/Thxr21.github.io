@@ -248,6 +248,7 @@ table select
     margin-top: 1%;
     width: 100%;
     text-align: center;
+    margin-bottom: 1%;
 }
 .buttonContainer input 
 {
@@ -268,6 +269,24 @@ table select
     color: #C3083F;
     border-color: #C3083F;
 }
+
+#error
+{
+    color: #C3083F;
+    font-family: openSansLight;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+#error span
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: source;
+    font-size: 2.8rem;    
+}
+
+
 
 /* #region MEDIA */
 
@@ -358,6 +377,20 @@ table select
 
 
 
+    }
+
+    #error
+    {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+
+    #error span
+    {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: source;
+        font-size: 2rem;    
     }
 
 }

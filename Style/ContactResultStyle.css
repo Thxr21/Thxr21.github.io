@@ -99,6 +99,13 @@ h2
 
 }
 
+#thankName
+{
+    color: #C3083F;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 @media (max-width: 885px) 
 {
     h1

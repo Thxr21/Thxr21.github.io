@@ -1,31 +1,42 @@
+
 function formVerification() 
 {
-    userName = document.getElementById("name").value;
+    fName = document.getElementById("fname").value;
+    lName = document.getElementById("lname").value;
+
     rof = document.getElementById("reason");
     subject = document.getElementsByName("subject");
     userMessage = document.getElementById("message").value;
+    errorMsg = document.getElementById("error");
 
-    if (!verifName(userName)) 
+    if (!verifName(fName)) 
     {
-        alert("Unavailable name.");  
+        errorMsg.innerHTML = "<span>First Name Error:</span><br>The name must consist of only alphabetic letters and spaces and must not be empty.";
+        return false;  
+    }
+    if (!verifName(lName)) 
+    {
+        errorMsg.innerHTML = "<span>Last Name Error:</span><br>The name must consist of only alphabetic letters and spaces and must not be empty.";
         return false;  
     }
 
+    localStorage.setItem("nametothank", fName);
+
     if (!verifSelect(rof))
     {
-        alert("You have to select a reason of contact.");
+        errorMsg.innerHTML = "<span>Reason of Contact Error:</span><br>Invalid Reason of Contact: Selecting a reason of contact is obligatory.";
         return false;
     }
 
     if (!verifSubject(subject))
     {
-        alert("You have to select a subject.");
+        errorMsg.innerHTML = "<span>Subject Error:</span><br>Selecting a subject is obligatory.";
         return false;
     }
 
     if (!verifMessage(userMessage)) 
     {
-        alert("Unavailable message.");
+        errorMsg.innerHTML = "<span>Message Error:</span><br>The message must consist of only alphabetic letters, numbers and spaces and must not be empty.";
         return false;
     }
 
@@ -60,4 +71,16 @@ function verifMessage(ch)
     }
     return i == ch.length && ch != "";
 
+}
+
+
+function clearError() {
+    document.getElementById("error").innerHTML = "";
+}
+
+
+function loadThank()
+{
+    username = localStorage.getItem("nametothank"); 
+    document.getElementById("thankName").innerHTML = " "+username;
 }
