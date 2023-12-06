@@ -143,7 +143,7 @@ body
     animation: gradientText 30s linear infinite;
 
 
-    font-size: 8rem;
+    font-size: 7rem;
     font-family: mailand;
     margin: 0;
     padding: 0;
@@ -169,7 +169,7 @@ body
     text-align: center;
 
     font-family: openSans;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     width: 92%;
     margin-left: 4%;
 }
@@ -178,5 +178,156 @@ body
 {
     grid-area: pjContainer;
     display: grid;
-    grid-template-columns: 1fr;
+    width: 80%;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
 }
+
+.projectTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projectTitle img
+{
+    width: 10%;
+    height: auto;
+    transition-duration: 400ms;
+}
+
+.projectTitle h1
+{
+    font-family: bebas;
+
+    
+    font-size: 3.2rem;
+    user-select: none;
+    transition-duration: 400ms;
+
+}
+
+.project
+{
+    background-color: #313135;
+
+    border-radius: 2rem;
+
+    transition-duration: 400ms;
+
+
+
+}
+
+.project:hover
+{
+    background-color: #C3083F;
+    box-shadow: #C3083F 0 0 4rem;
+    
+    transition: background-color 600ms 400ms, box-shadow 1000ms 600ms;
+
+}
+
+.project:hover > .projectTitle h1
+{
+    color: #1A1A1C;
+
+}
+
+.project:hover > .projectTitle img
+{
+
+    filter: brightness(10%);
+
+}
+
+
+.projectGrids:hover
+{
+    background-color: white;
+    box-shadow: white 0 0 4rem;
+}
+
+.content
+{
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 1rem;
+    padding-bottom: 4rem;
+    gap: 1rem;
+
+}
+
+.projectGrids
+{
+    background-color: #262629;
+
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    transition-duration: 400ms;
+
+
+}
+
+
+
+/* #region MEDIA */
+
+@media (max-width: 885px) {
+    .container .title
+    {
+        margin-top: 1%;
+    }
+
+
+    .container .title h1
+    {
+
+        background: linear-gradient(130deg, rgba(195, 8, 63, 1) 0%, rgba(195, 8, 63, 1) 19%, rgba(255,255,255,1) 20%, rgba(195, 8, 63, 1) 21%, rgba(195, 8, 63, 1));
+        background-size: 400%;
+        
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: gradientText 18s linear infinite;
+
+
+        font-size: 6rem;
+        margin: 2rem 0 0 0;
+
+    }
+
+    .container .paragraph
+    {
+
+        font-size: 1.6rem;
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    .container .projectContainer
+    {
+
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media (min-width: 886px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 700px) and (max-width: 885px) {
+
+}
+
+@media (min-width: 480.5px) and (max-width: 800px) and (max-height: 500px) {
+
+}
+
+/* #endregion */

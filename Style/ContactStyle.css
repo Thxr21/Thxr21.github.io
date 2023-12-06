@@ -115,7 +115,7 @@ body
 
 .title h1
 {
-    background: linear-gradient(140deg, rgba(48,213,200,1) 0%, rgba(48,213,200,1) 19%, rgba(255,255,255,1) 20%, rgba(48,213,200,1) 21%, rgba(48,213,200,1) 49%, rgba(255,255,255,1) 50%, rgba(48,213,200,1) 51%, rgba(48,213,200,1) 79%, rgba(255,255,255,1) 80%, rgba(48,213,200,1) 81%, rgba(48,213,200,1) 100%);
+    background: linear-gradient(130deg, rgba(48,213,200,1) 0%, rgba(48,213,200,1) 19%, rgba(255,255,255,1) 20%, rgba(48,213,200,1) 21%, rgba(48,213,200,1) 49%, rgba(255,255,255,1) 50%, rgba(48,213,200,1) 51%, rgba(48,213,200,1) 79%, rgba(255,255,255,1) 80%, rgba(48,213,200,1) 81%, rgba(48,213,200,1) 100%);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -295,6 +295,8 @@ table select
     {
         margin-top: 4%;
         font-size: 6.4rem;
+        animation: gradientText 24s linear infinite;
+
     }
 
     .container .contactParagraph
@@ -400,12 +402,6 @@ table select
         margin-bottom: 4%;
     
     }
-
-}
-@media (min-width: 886px) and (max-width: 1280px) {
-
-}
-@media (min-width: 480.5px) and (max-width: 800px) and (max-height: 500px) {
 
 }
 

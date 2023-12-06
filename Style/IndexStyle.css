@@ -205,7 +205,7 @@ body
 
 .greeting span
 {
-    background: linear-gradient(140deg, rgba(255,255,255,1) 15%, rgba(195,8,63,1) 15%, rgba(195,8,63,1) 49%, rgba(255,255,255,1) 50%, rgba(195,8,63,1) 51%, rgba(195,8,63,1) 85%, rgba(255,255,255,1) 85%);
+    background: linear-gradient(130deg, rgba(255,255,255,1) 15%, rgba(195,8,63,1) 15%, rgba(195,8,63,1) 49%, rgba(255,255,255,1) 50%, rgba(195,8,63,1) 51%, rgba(195,8,63,1) 85%, rgba(255,255,255,1) 85%);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     background-clip: text;
