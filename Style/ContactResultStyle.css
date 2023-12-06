@@ -1,0 +1,102 @@
+/* #region FONTS */
+
+@font-face {
+    font-family: Source;
+    src: url(Fonts/Source.ttf);
+}
+
+@font-face {
+    font-family: Mailand;
+    src: url(Fonts/Mailand.otf);
+}
+
+@font-face {
+    font-family: Glimp;
+    src: url(Fonts/Glimp.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(Fonts/Bebas.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(Fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(Fonts/OpenSans-Light.ttf);
+}
+
+
+/*#endregion*/
+
+:root{
+    font-size: 62.5%;
+}
+::-webkit-scrollbar
+{
+    background-color: #1A1A1C;
+
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+    background-color: #30D5C8;
+
+}
+
+html
+{
+    scroll-behavior: smooth;
+    
+}
+body
+{
+    width: 100%;
+    background-color: #262629;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.6rem;
+    color: white;
+    display: grid;
+
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+
+}
+
+div
+{
+
+    text-align: center;
+}
+
+h1
+{
+    
+    font-family: bebas;
+    color: #30D5C8;
+    font-size: 7.5vw;
+    margin-bottom: 0;
+}
+
+h2
+{
+    
+    font-family: glimp;
+    font-size: 1.6vw;
+    margin-top: 0;
+
+}
+
+
