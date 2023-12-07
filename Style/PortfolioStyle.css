@@ -230,6 +230,15 @@ body
     transition: background-color 600ms 400ms, box-shadow 1000ms 600ms;
 
 }
+#c_projectGrid:hover
+{
+    background-color: #30D5C8;
+    box-shadow: #30D5C8 0 0 4rem;
+    
+    transition: background-color 600ms 400ms, box-shadow 1000ms 600ms;
+
+}
+
 
 .project:hover > .projectTitle h1
 {
@@ -304,6 +313,11 @@ body
     font-weight: bold;
 
     font-size: 3rem;
+}
+
+#c_projectGrid h2 a:hover
+{
+    color: #30D5C8;
 }
 
 
