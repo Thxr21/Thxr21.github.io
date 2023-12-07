@@ -245,8 +245,11 @@ body
 }
 
 
+
 .projectGrids:hover
 {
+    color: #1A1A1C;
+
     background-color: white;
     box-shadow: white 0 0 4rem;
 }
@@ -269,8 +272,38 @@ body
     padding: 2rem 2rem;
     border-radius: 2rem;
     transition-duration: 400ms;
+    text-align: center;
+
+    display: grid;
+    align-items: center;
 
 
+}
+
+.projectGrids a
+{
+    
+    text-decoration: none;
+    color: white;
+    font-family: Glimp;
+    font-size: 2.8rem;
+    transition-duration: 400ms;
+    user-select: none;
+
+}
+
+.projectGrids:hover > h2 a
+
+{
+    color: #1A1A1C;
+}
+
+.projectGrids h2 a:hover
+{
+    color: #C3083F;
+    font-weight: bold;
+
+    font-size: 3rem;
 }
 
 
@@ -296,7 +329,7 @@ body
         animation: gradientText 18s linear infinite;
 
 
-        font-size: 6rem;
+        font-size: 5rem;
         margin: 2rem 0 0 0;
 
     }
@@ -313,6 +346,94 @@ body
     {
 
         grid-template-columns: 1fr;
+    }
+
+    .projectTitle img
+    {
+        width: 14%;
+        margin-top: -.5%;
+
+    }
+    
+    .projectTitle h1
+    {
+    
+        
+        font-size: 3rem;
+    
+    }
+
+    .project:hover
+    {
+        background-color: #313135;
+        box-shadow: #313135 0 0 0rem;
+        
+        transition: background-color 600ms 400ms, box-shadow 1000ms 600ms;
+    
+    }
+    
+    .project:hover > .projectTitle h1
+    {
+        color: white;
+    
+    }
+    
+    .project:hover > .projectTitle img
+    {
+    
+        filter: brightness(100%);
+    
+    }
+    
+    
+    
+    .projectGrids:hover
+    {
+    
+        background-color: #C3083F;
+        box-shadow: #C3083F 0 0 4rem;
+    }
+    
+    .content
+    {
+        padding: 0 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+    
+    }
+    
+    .projectGrids
+    {
+        background-color: #262629;
+        
+
+        padding: .2rem 1rem .6rem 1rem;
+        border-radius: 2rem;
+        transition-duration: 400ms;
+        text-align: center;
+    
+    
+    }
+    
+    .projectGrids a
+    {
+        font-size: 1.8rem;
+    
+    }
+    
+    .projectGrids:hover > h2 a
+    
+    {
+        color: #1A1A1C;
+    }
+    
+    .projectGrids h2 a:hover
+    {
+        color: white;
+        text-shadow: white 0 0 2rem;
+
+    
+        font-size: 1.8rem;
     }
 
 
