@@ -11,12 +11,12 @@ function formVerification()
 
     if (!verifName(fName)) 
     {
-        errorMsg.innerHTML = "<span>First Name Error:</span><br>The name must consist of only alphabetic letters and spaces and must not be empty.";
+        errorMsg.innerHTML = "<span>First Name Error:</span><br>The first name must consist of only alphabetic letters and spaces and must not be empty.";
         return false;  
     }
     if (!verifName(lName)) 
     {
-        errorMsg.innerHTML = "<span>Last Name Error:</span><br>The name must consist of only alphabetic letters and spaces and must not be empty.";
+        errorMsg.innerHTML = "<span>Last Name Error:</span><br>The last name must consist of only alphabetic letters and spaces and must not be empty.";
         return false;  
     }
 
@@ -36,7 +36,7 @@ function formVerification()
 
     if (!verifMessage(userMessage)) 
     {
-        errorMsg.innerHTML = "<span>Message Error:</span><br>The message must consist of only alphabetic letters, numbers and spaces and must not be empty.";
+        errorMsg.innerHTML = "<span>Message Error:</span><br>The message must consist of only alphabetic letters, numbers, spaces, dots, periods and semi-colons and must not be empty.";
         return false;
     }
 
@@ -66,7 +66,7 @@ function verifSubject(sub)
 function verifMessage(ch) 
 {
     i = 0;
-    while ( i < ch.length && ( (ch[i].toUpperCase()>="A" && ch[i].toUpperCase()<="Z" ) || (ch[i]>="0" && ch[i]<="9") || ( i!= 0 && ch[i] == " " && ch[i+1] != " " && ch[i-1] != " ") ) ) {
+    while ( i < ch.length && ( ch[i] == "." || ch[i] == "," || ch[i] == ";" || (ch[i].toUpperCase()>="A" && ch[i].toUpperCase()<="Z" ) || (ch[i]>="0" && ch[i]<="9") || ( i!= 0 && ch[i] == " " && ch[i+1] != " " && ch[i-1] != " ") ) ) {
         i++;
     }
     return i == ch.length && ch != "";
